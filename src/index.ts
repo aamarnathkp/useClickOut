@@ -1,1 +1,2 @@
-export { default as useClickOut } from "./useClickOut";
+import useClickOut from "./useClickOut";
+export default useClickOut;

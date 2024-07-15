@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
  * @returns {React.RefObject} - The reference variable to be assigned to the component
  */
 
-const useClickOut = (callback: () => void) => {
+const useClickOut = (callback: () => void): React.RefObject<any> => {
     const contentRef: React.RefObject<any> = useRef(null);
 
     useEffect(() => {
