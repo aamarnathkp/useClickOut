@@ -10,5 +10,5 @@ const callbackFunction = () => {
 };
 const ref = useClickOut(callbackFunction);
 
-<Modal ref={ref}>...children...</Modal>;
+<div ref={ref}>...children...</div>;
 ```
