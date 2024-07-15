@@ -1,13 +1,14 @@
-useClickOut - CustomHook
+# useClickOut - Custom Hook
 
--   This custom hook is used to handle the click event outside of a referenced component.
+This custom hook is used to handle the click event outside of a referenced component.
 
--   usage
+## Usage
 
-    -   const ref = useClickOut(callbackFunction);
+```javascript
+const callbackFunction = () => {
+    console.log("clicked outside !!");
+};
+const ref = useClickOut(callbackFunction);
 
-        ## <Modal ref={ref}>
-
-        </Modal>
-
-        clicking outside of the Modal - callbackFunction will be excecuted.
+<Modal ref={ref}>...children...</Modal>;
+```
